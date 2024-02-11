@@ -28,6 +28,9 @@ Marketplace Scraper is a web scraping tool designed to extract listings from onl
    ```bash
    python3 --version
 
+5. **Download Source Code**
+Download the repo from https://github.com/moya1295/parts_scraper. Extract in your desired folder.
+
 5. **Double Click Install.py**
 Double click install.py file to complete the installation process. once finished you will see a folder created by the name virt. that means installation is complete. This may take 10-15 mins.
 
