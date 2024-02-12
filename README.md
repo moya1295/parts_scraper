@@ -48,8 +48,9 @@ Double click install.py file to complete the installation process. once finished
 
 ## Input Parameters
 
-- You will be asked to enter the year, make, model, city, and optional keywords (if any) to filter the search results.
+- You will be asked to enter the year, make, model, city, and two optional keywords (if any) to filter the search results.
 - For example, if you want to search for a 2010 Toyota Corolla in Toronto, you would enter `2010`, `Toyota`, `Corolla`, and `Toronto` as input.
+- For example, if you want to search for 2020 Honda Civic Front Bumper in Montreal, you would type keywords as year=2020, make=honda, model=civic, city=montreal, keyword_1=front, keyword_2=bumper.
 
 ## Output
 
