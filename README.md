@@ -14,7 +14,7 @@ Marketplace Scraper is a web scraping tool designed to extract listings from onl
 
 1. **Download Python 3.10.9**: You need to download Python 3.10.9 from the [official Python website](https://www.python.org/downloads/release/python-3109/).
 
-2. **Install Python**: After downloading the installer, follow the instructions provided to install Python on your system. Make sure to select the option to add Python to your PATH during the installation process.
+2. **Install Python**: After downloading the installer, follow the instructions provided to install Python on your system. Make sure to select the option to add Python to your PATH during the installation process. You can watch this video if you need help to install Python 3.10.9 https://www.youtube.com/watch?v=ASBwcqw2yZI
 
 3. **Configure PATH** (if necessary): If Python is not automatically added to your PATH during installation, you can manually configure it. Follow the appropriate instructions for your operating system:
    - **Windows**: Follow [these instructions](https://geek-university.com/python/add-python-to-the-windows-path/).
@@ -31,7 +31,7 @@ Marketplace Scraper is a web scraping tool designed to extract listings from onl
 5. **Download Source Code**
 Download the repo from https://github.com/moya1295/parts_scraper. Extract in your desired folder.
 
-5. **Double Click Install.py**
+6. **Double Click Install.py**
 Double click install.py file to complete the installation process. once finished you will see a folder created by the name virt. that means installation is complete. This may take 10-15 mins.
 
 ## Usage
