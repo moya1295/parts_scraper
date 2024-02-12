@@ -22,7 +22,7 @@ def main():
             spider = 'kiji_market'
         
         # construct filename
-        filename = f"{year}_{make}_{model}_{city}.csv"
+        filename = f"{year}_{make}_{model}_{city}_{keyword_1}_{keyword_2}_{spider}.csv"
 
         # Combine all commands into a single string
         command = f'{venv_activate_script} && cd marketplace_scraper && scrapy crawl {spider} -O ../output/{filename} -a year={year} -a make={make} -a model={model} -a keyword_1={keyword_1} -a keyword_2={keyword_2} -a city={city}'

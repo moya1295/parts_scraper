@@ -60,13 +60,14 @@ class KijiMarketSpider(scrapy.Spider):
 
             l.add_css("Listing_Title", 'a[data-testid="autos-cross-promo-listing-card-link"]::text, a[data-testid="listing-link"]::text')
 
-            l.add_css("Listing_Price_CAD", 'p[data-testid="listing-price"]::text' )
-            
+            #l.add_css("Listing_Price_CAD", 'p[data-testid="listing-price"]::text' )
+            l.add_xpath("Listing_Price_CAD", './/p[contains(@data-testid, "listing-price")]/text()')
             l.add_css("Listing_Location", 'p[data-testid="listing-location"]::text, div.eMzKxK p.dvzUfQ::text')
-
+    
             l.add_css("Listing_Url", 'a[data-testid="autos-cross-promo-listing-card-link"]::attr(href), a[data-testid="listing-link"]::attr(href)')
             
-            l.add_css('Mileage_KM', 'p.jWZAHd ::text')
+            #l.add_css('Mileage_KM', 'p.jWZAHd ::text')
+            l.add_xpath('Mileage_KM', './/p[contains(@class, "jWZAHd")]/text()')
 
             l.add_css('Description', 'p[data-testid="listing-description"]::text')
 
@@ -80,8 +81,10 @@ class KijiMarketSpider(scrapy.Spider):
             item = l.load_item()
             title = item.get('Listing_Title')
             location = item.get('Listing_Location')
-            if title and location:
-                if self.make.lower() in title[0].lower() and self.model.lower() in title[0].lower() and self.keyword_1.lower() in title[0].lower() and self.keyword_2.lower() in title[0].lower() and self.city.lower() in location[0].lower():
+            if title:
+                title_lower = title[0].lower()
+                if all(term.lower() in title_lower for term in [self.year, self.make, self.model]) \
+                    and (self.keyword_1.lower() in title_lower or self.keyword_2.lower() in title_lower):
                     yield item
 
         # Follow the next page if available

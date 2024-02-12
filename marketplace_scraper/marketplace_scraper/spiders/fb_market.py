@@ -85,5 +85,7 @@ class FacebookMarketSpider(Spider):
             # Check if make,model,keywords present in title
             title = item.get('Listing_Title')
             if title:
-                if self.make.lower() in title[0].lower() and self.model.lower() in title[0].lower() and self.keyword_1.lower() in title[0].lower() and self.keyword_2.lower() in title[0].lower():
+                title_lower = title[0].lower()
+                if all(term.lower() in title_lower for term in [self.year, self.make, self.model]) \
+                    and (self.keyword_1.lower() in title_lower or self.keyword_2.lower() in title_lower):
                     yield item
