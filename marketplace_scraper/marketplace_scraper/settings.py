@@ -12,6 +12,21 @@ BOT_NAME = "marketplace_scraper"
 SPIDER_MODULES = ["marketplace_scraper.spiders"]
 NEWSPIDER_MODULE = "marketplace_scraper.spiders"
 
+# Config Logs
+import os
+from datetime import datetime
+
+# Ensure log directory exists
+LOG_DIR = 'logs'
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+
+# Generate log file name with currrent datetime
+current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+LOG_FILE = os.path.join(LOG_DIR, f'scrapy_{current_datetime}.log')
+
+LOG_ENABLED = True
+LOG_LEVEL = 'DEBUG'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "marketplace_scraper (+http://www.yourdomain.com)"

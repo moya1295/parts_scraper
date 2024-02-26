@@ -1,12 +1,13 @@
-ERROR:root:Error occurred: Command 'virt\Scriptsctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla && pause' returned non-zero exit status 1.
+
+ERROR:root:Error occurred: Command 'virt\Scripts ctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla && pause' returned non-zero exit status 1.
 ERROR:root:Error occurred: Command 'scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla && pause' returned non-zero exit status 2.
 ERROR:root:Error occurred: Command 'scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla && pause' returned non-zero exit status 2.
 ERROR:root:Error occurred: Command 'scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla && pause' returned non-zero exit status 2.
-ERROR:root:Error occurred: Command 'virt\Scriptsctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla' returned non-zero exit status 1.
+ERROR:root:Error occurred: Command 'virt\Scripts ctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla' returned non-zero exit status 1.
 INFO:root:Script executed successfully.
-ERROR:root:Error occurred: Command 'virt\Scriptsctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla' returned non-zero exit status 1.
-ERROR:root:Error occurred: Command 'virt\Scriptsctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla' returned non-zero exit status 1.
-ERROR:root:Error occurred: Command 'virt\Scriptsctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla' returned non-zero exit status 1.
+ERROR:root:Error occurred: Command 'virt\Scripts ctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla' returned non-zero exit status 1.
+ERROR:root:Error occurred: Command 'virt\Scripts ctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla' returned non-zero exit status 1.
+ERROR:root:Error occurred: Command 'virt\Scripts ctivate && cd marketplace_scraper && scrapy crawl kiji_market -O output.csv -a year=2010 -a make=toyota -a model=corolla' returned non-zero exit status 1.
 INFO:root:Script executed successfully.
 INFO:root:Script executed successfully.
 ERROR:root:Error occurred: local variable 'spider' referenced before assignment
